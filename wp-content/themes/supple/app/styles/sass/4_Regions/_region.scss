@@ -1,0 +1,36 @@
+  ////////////////////////////////
+ // REGIONS /////////////////////
+////////////////////////////////
+
+.bottom-callouts {
+	margin-top: 50px;
+
+	.callout {
+		margin-bottom: 50px;
+		
+		&.background {
+			background: $middleCallOutBG;
+			padding: 25px 0;
+		}
+
+		.text {
+			width: percentage(620/960);
+			
+			h2 {
+				@include font-size(26px);
+				margin: 0 0 25px 0;
+			}
+
+			p {
+				margin-bottom: 35px;
+				line-height: 1.8em;
+			}
+	
+			a.button {
+				width: percentage(270/620);
+			}
+		}
+		
+	}
+
+} // End Bottom Callouts

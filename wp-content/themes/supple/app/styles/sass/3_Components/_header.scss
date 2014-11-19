@@ -1,0 +1,62 @@
+  ////////////////////////////////
+ // HEADER //////////////////////
+////////////////////////////////
+
+header {
+	@include box-shadow(0px 5px 15px rgba(0, 0, 0, 1));
+	height: 100px;
+	position: relative;
+	z-index: 10;
+
+	.header-inner {
+		overflow: hidden;
+		margin-top: 0;
+
+		.logo-container {
+			max-width: 135px;
+			margin-left: percentage(85/960);
+			width: percentage(135/960);
+			
+			img {
+				@include box-shadow(0px 3px 15px rgba(0, 0, 0, .2));
+			}
+
+		} // End Logo Container
+		
+		.right-nav {
+			float: right!important;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			height: 100px;
+
+			li {
+				float: left;
+				list-style: none;
+				margin-right: 1px;
+				min-width: percentage(137/420);
+				height: 100px;
+
+				a {
+					background: url(../../images/nav-bg.jpg) repeat-x bottom;
+					color: $headerLinkColor;
+					font-family: 'Open Sans';
+					font-weight: 100;
+					display: block;
+					@include font-size(12px);
+					font-weight: 100;
+					padding-top: 65px;
+					height: 100%;
+					text-align: center;
+				}
+				ul {
+					display: none;
+				}
+			}
+		} // End Nav Styles
+
+	} // End Header Inner
+
+} // End Header

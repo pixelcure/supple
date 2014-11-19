@@ -1,0 +1,33 @@
+{
+  "name": "sandbox-master",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-jst": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-compass": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-htmlmin": "*",
+    "grunt-contrib-imagemin": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-mocha": "*",
+    "grunt-usemin": "*",
+    "grunt-bower-requirejs": "*",
+    "grunt-requirejs": "*",
+    "grunt-rev": "*",
+    "grunt-open": "*",
+    "load-grunt-tasks": "*",
+    "connect-livereload": "*",
+    "time-grunt": "*",
+    "jshint-stylish": "*"
+  },
+  "engines": {
+    "node": "*"
+  }
+}

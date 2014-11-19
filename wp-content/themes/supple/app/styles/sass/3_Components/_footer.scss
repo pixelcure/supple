@@ -1,0 +1,80 @@
+  ////////////////////////////////
+ // FOOTER //////////////////////
+////////////////////////////////
+
+footer {
+	background: $footerBG;
+	border-top: 15px solid $strokeBG;
+	padding-bottom: 50px;
+	overflow: hidden;
+
+	.footer-inner {
+		
+		.left-content {
+			border-right: 1px solid $strokeBG;
+
+			.logo-container {
+				padding: 35px 0 0;
+				width: percentage(135/460);
+				max-width: 135px;
+				margin-bottom: 25px;
+			}
+
+			.address {
+				
+				span {
+					display: block;
+					padding-bottom: 5px;
+				}
+
+			}
+		} // End Left Content
+		
+		.footer-nav-container {
+			padding: 35px 0;
+			margin-right: 0;
+
+			.nav {
+				ul {
+					margin: 0;
+					list-style: none; 
+
+					li {
+						float: left;
+						margin-right: 10px;
+						
+						ul { display: none; }
+						
+						a {
+							color: $textColor;
+							font-weight: bold;
+							&:hover {
+								color: $strokeBG;
+							}
+						}
+
+						&:after {
+							content : "|";
+							padding-left: 10px;
+						}
+
+						&:last-child:after {
+							content : "";
+						}
+					}
+				}
+			} // end nav
+
+			.social {
+
+				ul {
+					display: none;
+				}
+
+			} // End Social
+
+		} // End Nav Container
+	
+	} // End Footer Inner
+
+} // End Footer

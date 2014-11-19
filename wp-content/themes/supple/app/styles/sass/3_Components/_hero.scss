@@ -1,0 +1,84 @@
+  ////////////////////////////////
+ // HERO ////////////////////////
+////////////////////////////////
+
+.hero-container {
+
+	background: url('../../images/hero-bg.jpg') no-repeat top center;
+	border-bottom: 10px solid $strokeBG;
+	@include background-size(cover);
+	min-height: 725px;
+
+	.hero-inner {
+		height: 100%;
+		margin-top: 0;
+		margin-bottom: 0;
+
+		.vertical-callout {
+			background: $heroVerticalCallOutBG;
+			min-height: 725px;
+			padding: 50px 25px;
+			
+			.top {
+				border-bottom: 1px solid $white;
+				padding-bottom: 40px;
+				margin-bottom: 45px;
+	
+				h1 {
+					color: $white;
+					line-height: 1.5em;
+					@include font-size(38px);
+					margin: 0 0 25px;
+				}
+				
+				h2 {
+					color: $white;
+					font-weight: 100;
+					@include font-size(26px);
+					margin-bottom: 0;
+				}
+
+			} // End Top
+
+			.bottom {
+
+				ul {
+					margin: 0 0 30px 25px;
+					padding: 0;
+
+					li {
+						color: $white;
+						@include font-size(16px);
+						padding-bottom: 15px;
+					}
+				}
+
+				a {
+				    &:hover{
+				        background: inherit;
+				        border: 1px solid $strokeBG;
+				        transition: .2s;
+				    }					
+				}
+			} // End Bottom
+
+		} // End Vertical Callout
+
+		.tagline-hero {
+			background: $heroRightCallOutBG;
+			float: right;
+			padding: 25px;
+			margin-top: 125px;
+
+			h1 {
+				@include font-size(62px);
+				color: $white;
+				font-weight: 500;
+				margin: 0;
+				text-align: right;
+				text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+			}
+		}
+	}
+
+} // End Hero Container
